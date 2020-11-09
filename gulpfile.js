@@ -12,7 +12,11 @@ const paths = {
     dist: 'dist',
   },
   styles: 'components/**/*.less',
-  scripts: ['components/**/*.{ts,tsx}', '!components/**/demo/*.{ts,tsx}'], // 脚本文件路径
+  scripts: [
+    'components/**/*.{ts,tsx}',
+    '!components/**/demo/*.{ts,tsx}',
+    '!components/**/__tests__/*.{ts,tsx}',
+  ],
 };
 
 /**
