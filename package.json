@@ -1,6 +1,6 @@
 {
   "name": "newrank-design",
-  "version": "1.0.23",
+  "version": "1.0.24",
   "description": "",
   "typings": "lib/index.d.ts",
   "main": "lib/index.js",
@@ -23,6 +23,10 @@
     "build:doc": "rimraf doc-site && docz build",
     "build:types": "tsc -p tsconfig.build.json && cpr lib esm",
     "preview:doc": "docz serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuyufan0421/newrank-design.git"
   },
   "keywords": [],
   "license": "ISC",
