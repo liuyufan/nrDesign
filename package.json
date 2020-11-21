@@ -1,6 +1,6 @@
 {
   "name": "newrank-design",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "",
   "typings": "lib/index.d.ts",
   "main": "lib/index.js",
@@ -26,7 +26,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/liuyufan0421/newrank-design.git"
+    "url": "git+https://github.com/liuyufan/nrDesign.git"
   },
   "keywords": [],
   "license": "ISC",
