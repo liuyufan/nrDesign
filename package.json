@@ -1,6 +1,6 @@
 {
   "name": "newrank-design",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "",
   "typings": "lib/index.d.ts",
   "main": "lib/index.js",
