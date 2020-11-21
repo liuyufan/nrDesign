@@ -1,10 +1,14 @@
 {
   "name": "newrank-design",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "description": "",
   "typings": "lib/index.d.ts",
   "main": "lib/index.js",
   "module": "esm/index.js",
+  "authors": {
+    "name": "liuyufan0421",
+    "email": "15680603571@163.com"
+  },
   "scripts": {
     "build": "npm run clean && npm run build:types && gulp",
     "clean": "rimraf lib esm dist",
