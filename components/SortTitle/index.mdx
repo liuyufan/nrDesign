@@ -1,0 +1,27 @@
+---
+name: SortTitle 可排序标题
+route: /SortTitle
+menu: 组件
+---
+
+import { NrBox } from '../../doc-comps';
+import BasicDemoCode from '!raw-loader!./demo/1-demo-basic.tsx';
+import BasicDemo from './demo/1-demo-basic';
+
+# SortTitle 可排序标题
+
+警告提示，展现需要关注的信息。
+
+## 代码演示
+
+### 基本用法
+
+<NrBox code={BasicDemoCode} title="基本用法" desc="使用kind控制Alert类型">
+  <BasicDemo />
+</NrBox>
+
+## API
+
+| 属性 | 说明     | 类型                                         | 默认值 |
+| ---- | -------- | -------------------------------------------- | ------ |
+| kind | 警告类型 | 'info'/'positive'/'negative'/'warning'非必填 | 'info' |
