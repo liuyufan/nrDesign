@@ -1,30 +1,30 @@
 import React from 'react';
 import classnames from 'classnames';
-import t from 'prop-types';
+ import t from 'prop-types';
+import { CaretDownOutlined } from '@ant-design/icons';
 
 import { SortTitleProps } from './interface';
 
 const prefixCls = 'nr-sortTitle';
 
-/** 创建排序title */
-const SortTitle: React.FC<SortTitleProps> = React.memo(({ sortKey, sortTitle, value, onClick }) => {
+const SortTitle: React.FC<SortTitleProps> = React.memo(({ sortKey, sortTitle = '', value, onClick }) => {
   const onClickSort = React.useCallback(() => {
-    onClick && onClick(sortKey);
-  }, [sortKey, onClick]);
+    onClick && onClick(value);
+  }, [value, onClick]);
 
   return (
     <span key={sortKey} className={prefixCls} onClick={onClickSort}>
       <span
-        className={classnames(styles.sortTitle, {
-          [styles.active]: sortKey === value,
+        className={classnames(prefixCls +'-text', {
+          [prefixCls +'-active']: sortKey === value,
+          [prefixCls +'-allow-sort']:  !!value,
         })}
       >
         {sortTitle}
-        <CaretDownOutlined
-          className={classnames(styles.descend, {
-            [styles.active]: sortKey === value,
-          })}
-        />
+        {value &&       <CaretDownOutlined
+                 className={prefixCls +'-icon'}
+        />}
+
       </span>
     </span>
   );

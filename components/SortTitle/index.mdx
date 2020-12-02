@@ -16,7 +16,7 @@ import BasicDemo from './demo/1-demo-basic';
 
 ### 基本用法
 
-<NrBox code={BasicDemoCode} title="基本用法" desc="使用kind控制Alert类型">
+<NrBox code={BasicDemoCode} title="基本用法" desc="灵活配置表头标题">
   <BasicDemo />
 </NrBox>
 
@@ -24,4 +24,7 @@ import BasicDemo from './demo/1-demo-basic';
 
 | 属性 | 说明     | 类型                                         | 默认值 |
 | ---- | -------- | -------------------------------------------- | ------ |
-| kind | 警告类型 | 'info'/'positive'/'negative'/'warning'非必填 | 'info' |
+| sortTitle | 标题 | string /React.ReactNode 必填 | '' |
+| value | 指定排序字段 | string 非必填 | '' |
+| sortKey | 当前排序字段 | string 非必填 | '' |
+| onClick | 点击排序回调 | function (val: string) ; 非必填 | 无 |
