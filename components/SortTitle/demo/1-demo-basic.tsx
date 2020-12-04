@@ -1,6 +1,6 @@
 import React from 'react';
-import SortTitle from 'newrank-design/lib/SortTitle';
-import 'newrank-design/lib/SortTitle/style';
+import {SortTitle} from 'newrank-design';
+
 
 const BasicDemo = () => {
 

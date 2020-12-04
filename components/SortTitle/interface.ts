@@ -16,5 +16,5 @@ export interface SortTitleProps {
    */
   onClick?: (val: string | undefined) => void;
 }
-declare const SortTitle: SortTitleProps;
-export default SortTitle;
+// declare const SortTitle: SortTitleProps;
+// export default SortTitle;
