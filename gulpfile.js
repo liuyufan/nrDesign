@@ -90,7 +90,7 @@ function copyLess() {
 function less2css() {
   return gulp
     .src(paths.styles)
-    .pipe(less()) // 处理less文件
+    .pipe(less({javascriptEnabled: true})) // 处理less文件
     .pipe(autoprefixer()) // 根据browserslistrc增加前缀
     .pipe(cssnano({ zindex: false, reduceIdents: false })) // 压缩
     .pipe(gulp.dest(paths.dest.lib))
